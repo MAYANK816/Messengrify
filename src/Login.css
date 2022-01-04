@@ -1,0 +1,124 @@
+.login_component {
+  display: grid;
+  place-items: center;
+}
+.modal {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+.modal-content {
+  background: white;
+  border-radius: 18px;
+  outline: none !important;
+  border: none !important;
+  backdrop-filter: saturate(180%) blur(5px);
+}
+#usernumber {
+  background: url("https://cdn-icons-png.flaticon.com/512/456/456212.png") white
+    no-repeat 9px 11px;
+  background-size: 15px;
+  padding-left: 25px;
+}
+#userpass {
+  background: url("https://cdn-icons-png.flaticon.com/512/483/483408.png") white
+    no-repeat 9px 11px;
+  background-size: 15px;
+  padding-left: 25px;
+}
+.modal-header {
+  border: 0px !important;
+}
+.close {
+  color: rgb(255, 255, 255);
+}
+.login_form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  flex-direction: row;
+  height: 70vh;
+}
+.login_form img {
+  width: 50%;
+  border-radius: 15px;
+  height: auto;
+}
+.login_form_fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.login_form_fields img {
+  border-radius: 50%;
+  width: 25%;
+}
+.login_form_fields label {
+  margin-bottom: 10px;
+  margin-right: auto;
+  padding-left: 15px;
+}
+.login_form_fields input {
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  border-bottom: 0.12px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.login_form_fields button {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background: transparent;
+}
+.login_form_fields h4,
+h5,
+label {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.login_form_fields h6 {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 35px;
+}
+.modal-header h5 {
+  color: white;
+  font-weight: bolder;
+}
+#login_btn {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 8px;
+  background: #00c476;
+  width: 20vw;
+  font-family: "Roboto Slab", serif;
+  border-radius: 15px;
+  transition: all 1s ease-in-out;
+  color: white;
+}
+#login_btn:hover {
+  background-color: white;
+  color: #333;
+  border: 0.5px solid #333;
+}
+@media screen and (max-width: 600px) {
+  .login_form {
+    width: 90vw;
+  }
+  #login_btn {
+    width: 30vw;
+  }
+  .login_form_fields input {
+    width: 80vw;
+  }
+}
